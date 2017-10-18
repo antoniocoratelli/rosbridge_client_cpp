@@ -1,0 +1,8 @@
+<launch>
+    <node
+        pkg="rosbridge_client_cpp_tests"
+        type="integration_tests"
+        name="rosbridge_client_cpp_integration_tests"
+        output="screen"
+    />
+</launch>

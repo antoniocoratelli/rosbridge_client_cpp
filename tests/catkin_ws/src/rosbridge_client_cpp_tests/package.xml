@@ -1,0 +1,18 @@
+<?xml version="0.1"?>
+<package>
+  <name>rosbridge_client_cpp</name>
+  <version>0.0.0</version>
+  <description>rosbridge_client_cpp</description>
+
+  <maintainer email="antoniocoratelli+rosbridge_client_cpp@gmail.com">Antonio Coratelli</maintainer>
+  <author email="antoniocoratelli+rosbridge_client_cpp@gmail.com">Antonio Coratelli</author>
+  <license>LGPLv3</license>
+
+  <build_depend>message_generation</build_depend><run_depend>message_runtime</run_depend>
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>roscpp</build_depend><run_depend>roscpp</run_depend>
+  <build_depend>std_msgs</build_depend><run_depend>std_msgs</run_depend>
+
+  <export></export>
+</package>

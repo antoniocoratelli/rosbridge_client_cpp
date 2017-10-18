@@ -1,0 +1,10 @@
+image: andystanton/gcc-cmake-gl
+
+pipelines:
+  default:
+    - step:
+        script:
+          - sudo apt-get update
+          - sudo apt-get -y install zlib1g-dev libssl-dev libcurl4-openssl-dev
+          - mkdir -p build && (cd build && cmake .. && make -j$(nproc))
+          - ./build/rosbridge_client_cpp_unit_tests
