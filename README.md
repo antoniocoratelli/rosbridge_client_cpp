@@ -18,8 +18,8 @@ instance of the `RosbridgeClient`:
 ```
 #include <rosbridge_client_cpp/rosbridge.h>
 
-auto on_connection = [](){std::cout << "RosbridgeClient connected" << std::endl};
-auto on_disconnection = [](){std::cout << "RosbridgeClient disconnected" << std::endl};
+auto on_connection = [](){ std::cout << "RosbridgeClient connected" << std::endl; };
+auto on_disconnection = [](){ std::cout << "RosbridgeClient disconnected" << std::endl; };
 RosbridgeClient rb("localhost", 9090, on_connection, on_disconnection);
 ```
 
@@ -35,7 +35,7 @@ my_pub.publish<picojson::object>(json);
 #### Subscriber
 
 ```
-auto my_callback = [](const picojson::object& json){std::cout << std::to_string(json) << std::endl;};
+auto my_callback = [](const picojson::object& json){ std::cout << std::to_string(json) << std::endl; };
 Subscriber my_sub(rb, "/my/topic", "std_msgs/String", my_callback, 5);
 ```
 
