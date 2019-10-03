@@ -14,8 +14,7 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef ROSBRIDGE_CLIENT_CPP_ROSBRIDGECLIENT_H
-#define ROSBRIDGE_CLIENT_CPP_ROSBRIDGECLIENT_H
+#pragma once
 
 #include <atomic>
 #include <future>
@@ -76,6 +75,4 @@ private:
     void listen(const std::string& data);
 };
 
-} // rosbridge_client_cpp
-
-#endif // ROSBRIDGE_CLIENT_CPP_ROSBRIDGECLIENT_H
+} // namespace rosbridge_client_cpp

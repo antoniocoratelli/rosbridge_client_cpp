@@ -14,8 +14,7 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef ROSBRIDGE_CLIENT_CPP_SERVICECLIENT_H
-#define ROSBRIDGE_CLIENT_CPP_SERVICECLIENT_H
+#pragma once
 
 #include "queues.h"
 #include "rosbridgeclient.h"
@@ -65,6 +64,4 @@ private:
     ListenerQueue::shared_ptr listener_queue;
 };
 
-}
-
-#endif // ROSBRIDGE_CLIENT_CPP_SERVICECLIENT_H
+} // namespace rosbridge_client_cpp

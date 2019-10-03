@@ -14,8 +14,7 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef ROSBRIDGE_CLIENT_CPP_SUBSCRIBER_H
-#define ROSBRIDGE_CLIENT_CPP_SUBSCRIBER_H
+#pragma once
 
 #include <atomic>
 #include "rosbridgeclient.h"
@@ -57,5 +56,3 @@ private:
 };
 
 } // namespace rosbridge_client_cpp
-
-#endif // ROSBRIDGE_CLIENT_CPP_SUBSCRIBER_H

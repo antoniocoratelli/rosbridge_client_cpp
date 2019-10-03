@@ -14,8 +14,7 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef ROSBRIDGE_CLIENT_CPP_UTILS_H
-#define ROSBRIDGE_CLIENT_CPP_UTILS_H
+#pragma once
 
 #include <atomic>
 #include <chrono>
@@ -154,5 +153,3 @@ inline std::string to_string(picojson::object j)
     return rosbridge_client_cpp::to_string(j);
 }
 } // namespace std
-
-#endif // ROSBRIDGE_CLIENT_CPP_UTILS_H

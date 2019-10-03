@@ -14,8 +14,7 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef ROSBRIDGE_CLIENT_CPP_OP_H
-#define ROSBRIDGE_CLIENT_CPP_OP_H
+#pragma once
 
 #include <set>
 #include <string>
@@ -56,7 +55,7 @@ bool isTopicOP(rosbridge_client_cpp::OP op);
  */
 bool isServiceOP(rosbridge_client_cpp::OP op);
 
-}
+} // namespace rosbridge_client_cpp
 
 namespace std
 {
@@ -64,6 +63,4 @@ namespace std
  * Extension to the std namespace to provide a `to_string` method for the `rosbridge_client_cpp::OP`
  */
 std::string to_string(rosbridge_client_cpp::OP op);
-}
-
-#endif // ROSBRIDGE_CLIENT_CPP_OP_H
+} // namespace std

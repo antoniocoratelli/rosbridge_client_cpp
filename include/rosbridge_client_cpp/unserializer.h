@@ -14,8 +14,7 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef ROSBRIDGE_CLIENT_CPP_UNSERIALIZER_H
-#define ROSBRIDGE_CLIENT_CPP_UNSERIALIZER_H
+#pragma once
 
 #include <map>
 #include <random>
@@ -102,7 +101,4 @@ private:
     picojson::object json;
 };
 
-}
-
-
-#endif // ROSBRIDGE_CLIENT_CPP_UNSERIALIZER_H
+} // namespace rosbridge_client_cpp

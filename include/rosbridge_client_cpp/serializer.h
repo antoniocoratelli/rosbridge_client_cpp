@@ -14,8 +14,7 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef ROSBRIDGE_CLIENT_CPP_SERIALIZER_H
-#define ROSBRIDGE_CLIENT_CPP_SERIALIZER_H
+#pragma once
 
 #include <map>
 #include <random>
@@ -138,6 +137,4 @@ struct SerializerServiceResponse: public Serializer
     }
 };
 
-}
-
-#endif // ROSBRIDGE_CLIENT_CPP_ROSBRIDGE_H
+} // namespace rosbridge_client_cpp
