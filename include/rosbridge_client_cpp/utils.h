@@ -148,7 +148,7 @@ inline std::string to_string(picojson::object json)
 
 namespace std
 {
-inline std::string to_string(picojson::object j)
+inline string to_string(picojson::object j)
 {
     return rosbridge_client_cpp::to_string(j);
 }

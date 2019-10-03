@@ -62,5 +62,5 @@ namespace std
 /**
  * Extension to the std namespace to provide a `to_string` method for the `rosbridge_client_cpp::OP`
  */
-std::string to_string(rosbridge_client_cpp::OP op);
+string to_string(rosbridge_client_cpp::OP op);
 } // namespace std
