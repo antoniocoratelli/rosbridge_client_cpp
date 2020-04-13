@@ -2,3 +2,5 @@
 build*
 devel*
 *.autosave
+.idea
+cmake-build-*
